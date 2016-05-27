@@ -1,0 +1,12 @@
+digraph BinaryTree {
+    ordering=out;
+    edge [arrowhead="none", arrowtail="none"];
+    {node [shape=rect] A}
+    {node [shape=hexagon] C D G H I}
+
+    A -> B -> C
+         B -> D
+    A -> E -> F  -> H
+         E -> G
+         F -> I
+}
