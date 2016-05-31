@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\ctikzset{bipoles/length=0.9cm}
+\pagenumbering{gobble}
+\usepackage[paperheight=5cm,paperwidth=6cm,margin=0.2cm]{geometry}
+\begin{document}
+\begin{figure}[!ht]
+  \begin{center}
+    \begin{circuitikz}
+      \fill[lightgray] (0.5,-1.5) rectangle (4.5,1.5);
+      \draw (0,0)
+      to[R,*-*] (2,0)
+      to[short] (2,1)
+      to[R] (4,1)
+      to[R,*-*] (4,-1)
+      to[R] (2,-1)
+      to[short] (2,0);
+      \draw (0,0)
+      to[R,*-*] (0,2);
+      \draw (0,0)
+      to[R,*-*] (0,-2);
+   \end{circuitikz}
+  \end{center}
+\end{figure}
+\end{document}
