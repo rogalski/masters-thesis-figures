@@ -8,22 +8,17 @@
 \begin{figure}[!ht]
   \begin{center}
     \begin{circuitikz}
-      \fill[lightgray] (1.5,-1.5) rectangle (8.5,1.5);
+      % \fill[lightgray] (1.5,-1.5) rectangle (8.5,1.5);
       \draw (0,0)
-      to[R,d-o] (2,0)
-      to[R,o-*] (4,0)
-      to[R,*-*] (6,0)
-      to[R,*-o] (8,0)
-      to[R,o-d] (10,0);
+      to[R,d-*,i>^=$$] (2,0)
+      to[R,*-*] (4,0)
+      to[R,*-d,i^<=$$] (6,0);
+      \draw (0,-2)
+      to[R,d-*,i>^=$$] (2,-2)
+      to[R,*-*] (4,-2)
+      to[R,*-*] (4,0);
       \draw (2,0)
-      to[short,o-] (2,1)
-      to[R,-] (8,1)
-      to[short,-o] (8,0);
-      \draw (2,0)
-      to[short,o-] (2,-1)
-      to[R,-*] (5,-1)
-      to[R,*-] (8,-1)
-      to[short,-o] (8,0);
+      to[R,*-*] (2,-2);
    \end{circuitikz}
   \end{center}
 \end{figure}
