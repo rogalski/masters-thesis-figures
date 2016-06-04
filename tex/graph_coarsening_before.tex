@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\ctikzset{bipoles/length=1cm}
+\pagenumbering{gobble}
+\usepackage[paperheight=6cm,paperwidth=8cm,margin=0.2cm]{geometry}
+\begin{document}
+\begin{figure}[!ht]
+  \begin{center}
+    \begin{circuitikz}
+      \filldraw[lightgray,rotate around={-45:(1, -1)}] (1, -1) circle (1.8 and 0.2);
+      \filldraw[lightgray,rotate around={-26.56:(3, 1.5)}] (3,1.5) circle (1.4 and 0.2);
+      \filldraw[lightgray,rotate around={71.56:(5.5, 0.5)}] (5.5, 0.5) circle (1.8 and 0.2);
+      \draw (0,0)
+      to[short,*-*] (2, 2)
+      to[short,*-*] (4, 1)
+      to[short,*-*] (6, 2)
+      to[short,*-*] (5,-1)
+      to[short,*-*] (2,-2)
+      to[short,*-*] (0, 0);
+      \draw (2,-2)
+      to[short,*-*] (2,2);
+      \draw (2,2)
+      to[short,*-*] (6,2);
+      \draw (2,-2)
+      to[short,*-*] (4, 1);
+   \end{circuitikz}
+  \end{center}
+\end{figure}
+\end{document}
