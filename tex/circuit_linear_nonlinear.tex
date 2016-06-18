@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,polush]{babel}
+\usepackage{tikz}
+\pagenumbering{gobble}
+\usepackage[paperheight=4.6cm,paperwidth=8.6cm,margin=0.2cm]{geometry}
+\begin{document}
+  \begin{figure}[!ht]
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [rounded corners=5] (0,0) rectangle (8,4) node[below left=-3.2 and top=-0.02] {obwód};
+        \draw [rounded corners=5] (0.4,0.5) rectangle (3.6,3.5) node[midway,align=center] {cz. liniowa\\(R, L, C)};
+        \draw [rounded corners=5] (4.0,0.5) rectangle (7.6,3.5) node[midway,align=center] {cz. nieliniowa\\(tranzystory, diody)};
+        \draw (3.6, 1.0) -- (4.0, 1.0);
+        \draw (3.6, 1.4) -- (4.0, 1.4);
+        \draw (3.6, 1.8) -- (4.0, 1.8);
+        \draw (3.6, 2.2) -- (4.0, 2.2);
+        \draw (3.6, 2.6) -- (4.0, 2.6);
+        \draw (3.6, 3.0) -- (4.0, 3.0);
+      \end{tikzpicture}
+    \end{center}
+  \end{figure}
+\end{document}
