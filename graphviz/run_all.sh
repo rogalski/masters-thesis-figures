@@ -2,4 +2,3 @@
 neato graph_basics.gv -Teps -ograph_basics.eps
 fdp coarsening.gv -Tpng -ocoarsening.png -Gstart=7
 dot binary_tree.gv -Teps -obinary_tree.eps
-fdp coarsening_stackoverflow.gv -Tpng -ocoarsening_stackoverflow.png 

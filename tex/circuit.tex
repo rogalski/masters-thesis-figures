@@ -1,14 +1,13 @@
 \documentclass{article}
 \usepackage{tikz}
-\usepackage{circuitikz}
+\usepackage{circuitikzgit}
 \ctikzset{bipoles/length=1cm}
 \pagenumbering{gobble}
-\usepackage[paperheight=4cm,paperwidth=12cm,margin=0.2cm]{geometry}
+\usepackage[paperheight=3.8cm,paperwidth=7.5cm,margin=0.2cm]{geometry}
 \begin{document}
 \begin{figure}[!ht]
   \begin{center}
     \begin{circuitikz}
-      % \fill[lightgray] (1.5,-1.5) rectangle (8.5,1.5);
       \draw (0,0)
       to[R,d-*,i>^=$$] (2,0)
       to[R,*-*] (4,0)

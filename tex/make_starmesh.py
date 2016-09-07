@@ -6,7 +6,7 @@ r = 3;
 PREFIX = r"""
 \documentclass{article}
 \usepackage{tikz}
-\usepackage{circuitikz}
+\usepackage{circuitikzgit}
 \ctikzset{bipoles/length=1cm}
 \pagenumbering{gobble}
 \usepackage[paperheight=%fcm,paperwidth=%fcm,margin=0.2cm]{geometry}
