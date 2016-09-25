@@ -1,9 +1,9 @@
-\documentclass{article}
-\usepackage{amsmath}
+\documentclass{standalone}
+\usepackage{amsmath,amsfonts,amssymb,amsopn,amscd}
 \pagenumbering{gobble}
-\usepackage[paperheight=4cm,paperwidth=12cm,margin=0.2cm]{geometry}
 \begin{document}
-\[
+\begin{equation*}
+\mathop{
 \begin{bmatrix}
 \bullet & \space & \space & \space & \bullet \\
 \space & \bullet & \space & \space & \bullet \\
@@ -11,7 +11,9 @@
 \space & \space & \space & \bullet & \bullet \\
 \bullet & \bullet & \bullet & \bullet & \bullet \\
 \end{bmatrix}
+}\limits_{A_1}
 \rightarrow
+\mathop{
 \begin{bmatrix}
 \circ & \space & \space & \space & \circ \\
 \space & \bullet & \space & \space & \bullet \\
@@ -19,7 +21,9 @@
 \space & \space & \space & \bullet & \bullet \\
 \circ & \bullet & \bullet & \bullet & \bullet \\
 \end{bmatrix}
+}\limits_{A_2}
 \rightarrow
+\mathop{
 \begin{bmatrix}
 \circ & \space & \space & \space & \circ \\
 \space & \circ & \space & \space & \circ \\
@@ -27,6 +31,6 @@
 \space & \space & \space & \bullet & \bullet \\
 \circ & \circ & \bullet & \bullet & \bullet \\
 \end{bmatrix}
-\]
-
+}\limits_{A_3}
+\end{equation*}
 \end{document}

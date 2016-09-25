@@ -1,9 +1,10 @@
-\documentclass{article}
-\usepackage{amsmath}
+\documentclass{standalone}
+\usepackage{amsmath,amsfonts,amssymb,amsopn,amscd}
 \pagenumbering{gobble}
-\usepackage[paperheight=4cm,paperwidth=12cm,margin=0.2cm]{geometry}
+
 \begin{document}
-\[
+\begin{equation*}
+\mathop{
 \begin{bmatrix}
 \bullet & \bullet & \bullet & \bullet & \bullet \\
 \bullet & \bullet & \space & \space & \space \\
@@ -11,21 +12,26 @@
 \bullet & \space & \space & \bullet & \space \\
 \bullet & \space & \space & \space & \bullet \\
 \end{bmatrix}
+}\limits_{A_1}
 \rightarrow
+\mathop{
 \begin{bmatrix}
 \circ & \circ & \circ & \circ & \circ \\
-\circ & \bullet & \times & \times & \times \\
-\circ & \times & \bullet & \times & \times \\
-\circ & \times & \times & \bullet & \times \\
-\circ & \times & \times & \times & \bullet \\
+\circ & \bullet & \otimes & \otimes & \otimes \\
+\circ & \otimes & \bullet & \otimes & \otimes \\
+\circ & \otimes & \otimes & \bullet & \otimes \\
+\circ & \otimes & \otimes & \otimes & \bullet \\
 \end{bmatrix}
+}\limits_{A_2}
 \rightarrow
+\mathop{
 \begin{bmatrix}
 \circ & \circ & \circ & \circ & \circ \\
 \circ & \circ & \circ & \circ & \circ \\
-\circ & \circ & \bullet & \times & \times \\
-\circ & \circ & \times & \bullet & \times \\
-\circ & \circ & \times & \times & \bullet \\
+\circ & \circ & \bullet & \otimes & \otimes \\
+\circ & \circ & \otimes & \bullet & \otimes \\
+\circ & \circ & \otimes & \otimes & \bullet \\
 \end{bmatrix}
-\]
+}\limits_{A_3}
+\end{equation*}
 \end{document}
